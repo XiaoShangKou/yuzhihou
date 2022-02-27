@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">雨之后</string>
+    <string name="BookShelf_content">我是书架</string>
+    <string name="Search_content">我是搜索</string>
+    <string name="BooKShelf">书架</string>
+    <string name="Mine">关于</string>
+    <string name="Search">搜索</string>
+    <string name="todo">TODO</string>
+    <string name="about_author">软件由小伤口制作,欢迎微信\n搜索公众号关注\n小伤口或者关注b站账号\n小伤口-,获取更多软件和软件知识.</string>
+    <string name="software_notice">软件仅供交流学习使用,\n永久无广告!永久免费!,\n如有侵权请联系作者QQ:\n1430235457</string>
+    <string name="suggestion">软件交流群:1034515606</string>
+    <string name="search_content">请输入小说名称</string>
+    <string name="search_button">搜索</string>
+    <string name="progressbar">加载中...</string>
+    <string name="more_novel">点击加载更多</string>
+    <string name="celebrate">亲爱的书友，每天都要开心哦~^_^</string>
+    <string name="load_more">正在加载中..</string>
+    <string name="shua_xin">点我刷新</string>
+    <string name="shu_xian">|</string>
+    <string name="zhankai">展开</string>
+    <string name="mulu">目录</string>
+    <string name="loading">正在加载...</string>
+    <string name="acitonbar_mulu">目录</string>
+    <string name="last_zhang">上一章</string>
+    <string name="next_zhang">下一章</string>
+    <string name="shu_jia">加入书架</string>
+    <string name="shujia_shua_xin">点击书架按钮刷新</string>
+    <string name="update">更新公告:</string>
+</resources>

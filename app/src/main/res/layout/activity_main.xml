@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".MAIN.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--书架,搜索,我的按钮-->
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_above="@id/Tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <ImageButton
+            android:id="@+id/search_fragment"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/search1"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerInside"
+            android:background="#0000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+
+        <ImageButton
+            android:id="@+id/bookshelf_fragment"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bookshelf1"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerInside"
+            android:background="#0000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+
+        <ImageButton
+            android:id="@+id/set_fragment"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/mine1"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerInside"
+            android:background="#0000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/Tag"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/icon_color"
+            android:text="@string/Search"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/icon_color"
+            android:text="@string/BooKShelf"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Mine"
+            android:textColor="@color/icon_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageBegin"
+        android:background="@drawable/begin"/>
+</RelativeLayout>

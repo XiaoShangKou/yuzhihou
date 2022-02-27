@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/relativelayout"
+
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="#B58282"
+        android:text="@string/shujia_shua_xin"
+        android:gravity="top"/>
+    <ScrollView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+        <com.xiaoshangkou.example.myapplication.BOOKSHELF.AutoNextLineLinearlayout
+            android:id="@+id/mylinear"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+        </com.xiaoshangkou.example.myapplication.BOOKSHELF.AutoNextLineLinearlayout>
+
+    </ScrollView>
+
+</RelativeLayout>

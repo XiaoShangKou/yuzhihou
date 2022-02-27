@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image_search"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/name1"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/search"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/retouch"
+        android:layout_above="@+id/name1"
+        android:layout_centerHorizontal="true"/>
+    <!--
+    android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        将输入框改为不换行，键盘的换行按钮为搜索按钮
+    -->
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center_vertical"
+        android:hint="@string/search_content"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F8F5F6"
+        android:textSize="15sp"
+        tools:ignore="RtlSymmetry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name1"
+        android:layout_marginTop="5dp"
+        android:text="@string/celebrate"
+        android:textColor="#92587E79"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="SmallSp" />
+</RelativeLayout>

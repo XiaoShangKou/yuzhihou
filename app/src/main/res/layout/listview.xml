@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingStart="16dp"
+    android:background="#FFFFFF"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_height="match_parent">
+
+    <!--题目-->
+    <TextView
+        android:textStyle="bold"
+        android:background="#05F50057"
+        android:id="@+id/topic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/novel_search"
+        android:textSize="17sp" />
+    <!--作者-->
+    <TextView
+        android:id="@+id/author1"
+        android:textStyle="bold"
+        android:layout_below="@+id/topic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/novel_search" />
+    <!--字数-->
+    <TextView
+        android:id="@+id/wordCount1"
+        android:layout_below="@+id/author1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/novel_search" />
+    <!--小说状态-->
+    <TextView
+        android:id="@+id/state1"
+        android:layout_toRightOf="@+id/wordCount1"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/author1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/novel_search" />
+    <!--最新章节-->
+    <TextView
+
+        android:id="@+id/update1"
+        android:layout_below="@+id/wordCount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/novel_search" />
+    <!--时间-->
+    <TextView
+        android:id="@+id/time1"
+        android:layout_below="@+id/update1"
+        android:layout_width="wrap_content"
+        android:textColor="@color/novel_search"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayout"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SEARCH.NovelContent">
+
+    <!--加载条-->
+    <ProgressBar
+        android:id="@+id/load_novel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zongzhang"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80F0E0B9"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/novel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp" />
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#B2101010"
+        android:layout_below="@+id/scrollView"
+        android:layout_marginTop="-50dp">
+        <Button
+            android:id="@+id/mulu_novel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            android:text="@string/mulu"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/last_zhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            android:text="@string/last_zhang"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/next_zhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            android:text="@string/next_zhang"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/add_shujia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:background="@color/button_color"
+            android:text="@string/shu_jia"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

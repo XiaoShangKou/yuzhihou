@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.25" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo1/app/src/main/res/layout/activity_about_author.xml" value="0.264" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo1/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo1/app/src/main/res/layout/activity_novel.xml" value="0.2" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo1/app/src/main/res/layout/activity_search_results.xml" value="0.264" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo1/app/src/main/res/layout/activity_software_notice.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo1/app/src/main/res/layout/activity_update_suggestion.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo1/app/src/main/res/layout/bookshelf.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo1/app/src/main/res/layout/mine.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo1/app/src/main/res/layout/search.xml" value="0.264" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/drawable/rounded_edittext.xml" value="0.265625" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/drawable/shape.xml" value="0.265625" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/drawable/shape_gray_square_bg.xml" value="0.2518518518518518" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout-v26/activity_novel_content.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/activity_about_author.xml" value="0.1838768115942029" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/activity_novel.xml" value="0.31640625" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/activity_novel_content.xml" value="0.264" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/activity_novel_mulu.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/activity_search_results.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/activity_software_notice.xml" value="0.24909420289855072" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/activity_update_suggestion.xml" value="0.20153985507246377" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/bookshelf.xml" value="0.1956521739130435" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/listview.xml" value="0.264" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/load_more.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/mulu_view.xml" value="0.4" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/layout/search.xml" value="0.264" />
+        <entry key="..\:/Android/androidKaiFa/JianShuo/demo3/app/src/main/res/menu/mian.xml" value="0.24947916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
