@@ -204,12 +204,13 @@ class SearchFormation{
             //System.out.println(novelMulu);
 
             //小说封面
-            String image=links.get(1).attr("src");
+            //System.out.println(links);
+            String image=links.get(0).attr("src");
             //System.out.println(image);
             novelFormation.put("image",image);
 
             //小说名称
-            String name=links.get(1).attr("title");
+            String name=links.get(0).attr("title");
             //System.out.println(name);
             novelFormation.put("name",name);
 
