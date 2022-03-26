@@ -185,11 +185,11 @@ public class NovelContent extends AppCompatActivity {
                                     }
                                 }
                                 Log.d("记录", jiLu);
-                                handler3.postDelayed(this, 2000);
+                                handler3.postDelayed(this, 1000);
                             }
                         };
                         //启动计时器
-                        handler3.postDelayed(runnable, 2000);
+                        handler3.postDelayed(runnable, 1000);
                     } catch (IOException e) {
                         e.printStackTrace();
                     } finally {

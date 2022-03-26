@@ -48,8 +48,10 @@ public class BookShelf extends Fragment {
     //是否第一次加载
     private boolean isFirstLoading = true;
 
+    File[] files;
+
     /**
-     * 在fragment可见的时候，刷新数据
+     * 从其他activity返回时，会调用这个方法，可以在这里进行fragmen的刷新
      */
     @Override
     public void onResume() {
@@ -57,7 +59,12 @@ public class BookShelf extends Fragment {
 
         if (!isFirstLoading) {
             //如果不是第一次加载，刷新数据
-            //updateUI();
+            FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+            Fragment f = new BookShelf();
+            ft.replace(R.id.fl, f);
+            //提交
+            ft.commit();
+
         }
 
         isFirstLoading = false;
@@ -75,7 +82,7 @@ public class BookShelf extends Fragment {
         File externalFilesDir =getContext().getExternalFilesDir(null);
         String externalFilesDirPath =externalFilesDir.getPath() ;
         fileNovel=new File(externalFilesDirPath,name+author+".txt");
-        System.out.println(name+author+".txt");
+        //System.out.println(name+author+".txt");
         fileNovel.delete();
         FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
         Fragment f = new BookShelf();
@@ -89,6 +96,8 @@ public class BookShelf extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         @SuppressLint("InflateParams") View view=inflater.inflate(R.layout.bookshelf,null);
+
+        isFirstLoading = true;
 
         //显示图片
         //Glide设置图片圆角角度
@@ -104,7 +113,7 @@ public class BookShelf extends Fragment {
         String externalFilesDirPath =externalFilesDir.getPath() ;
         //读取此文件夹的所有文件内容
         File f=new File(externalFilesDirPath);
-        File[] files=f.listFiles();
+        files=f.listFiles();
        // Log.d("length",String.valueOf(files.length));
         if (files.length!=0) {
             for (int i = 0; i < files.length; i++) {
@@ -213,10 +222,40 @@ public class BookShelf extends Fragment {
                 }
             }
         }else {
+            RelativeLayout relativeLayout = new RelativeLayout(getActivity());
+            ImageView imageView2 = new ImageView(getActivity());
+            //RelativeLayout.LayoutParams image_Params = new RelativeLayout.LayoutParams();
+
+            //设置imageview的大小和布局
+            ViewGroup.MarginLayoutParams mp2 = new ViewGroup.MarginLayoutParams(400, 420);  //item的宽高
+            mp2.setMargins(5, 0, 0, 0);//分别是margin_top那四个属性
+            RelativeLayout.LayoutParams lp3 = new RelativeLayout.LayoutParams(mp2);
+            lp3.addRule(RelativeLayout.ALIGN_LEFT);
+            imageView2.setLayoutParams(lp3);
+
+            //设置id为3
+            imageView2.setId(3);
+            //显示图片
+            Glide.with(BookShelf.this)
+                    .load(R.drawable.notfind)
+                    .apply(options)
+                    //.override(200, 180) // resizes the image to these dimensions (in pixel). does not respect aspect ratio
+                    .placeholder(R.drawable.loadimg)
+                    .error(R.drawable.exception)
+                    .into(imageView2);
+            relativeLayout.addView(imageView2);
+
+
             TextView textView=new TextView(getActivity());
-            textView.setText("您还没有添加书籍哦~");
-            textView.setTextSize(25);
-            mylinear.addView(textView);
+            textView.setText(" 您还没有添加书籍哦~");
+            textView.setTextSize(15);
+            RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(mp2);
+            lp.addRule(RelativeLayout.ALIGN_RIGHT);
+            textView.setLayoutParams(lp);
+            relativeLayout.addView(textView);
+            //再将relativelayout添加到自定义的布局管理中
+            mylinear.addView(relativeLayout);
+
         }
         return view;
     }

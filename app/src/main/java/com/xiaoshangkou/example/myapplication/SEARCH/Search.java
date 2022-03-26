@@ -43,7 +43,7 @@ public class Search extends Fragment {
         @SuppressLint("InflateParams") View view=inflater.inflate(R.layout.search,null);
         ImageView imageView=view.findViewById(R.id.image_search);
         EditText etNoteContent=view.findViewById(R.id.name1);
-        etNoteContent.setText("爱情");
+        //etNoteContent.setText("爱情");
         //设置键盘的换行为搜索
         etNoteContent.setImeOptions(EditorInfo.IME_ACTION_SEARCH);
         //获取搜索框的内容
